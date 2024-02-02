@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+}
+.li1{
+    font-size : 25px;
+}
+.li2{
+    font-size : 25px;
+}
+.li3{
+    font-size : 25px;
+}
+.li4{
+    font-size : 25px;
+}
+.li5{
+    font-size : 25px;
+}
+.li6{
+    font-size : 25px;
+}
+.li7{
+    font-size : 25px;
+}
+.li8{
+    font-size : 25px;
+}
+.li9{
+    font-size : 25px;
+}
+.li10{
+    font-size: 25px;
+}
+.card{
+    display:flex;
+    justify-content: center;
+}
