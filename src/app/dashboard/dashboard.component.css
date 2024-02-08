@@ -31,7 +31,16 @@ h1{
 .li10{
     font-size: 25px;
 }
+.li11{
+    font-size: 25px;
+}
+.li12{
+    font-size: 25px;
+}
 .card{
     display:flex;
     justify-content: center;
+}
+.hasError {
+    color: red;
 }
