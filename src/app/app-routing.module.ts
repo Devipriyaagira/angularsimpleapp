@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,14 @@ const routes: Routes = [
   {
     path:"dashboard",
     loadChildren: () => import('./dashboard/dashboard.module').then(m =>m.DashboardModule)
+  },
+  {
+    path: 'products',
+    component: ProductComponent
   }
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
