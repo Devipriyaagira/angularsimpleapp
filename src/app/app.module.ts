@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from '@angular/material/radio';
 //import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
@@ -18,15 +17,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { CommonModule } from '@angular/common';
+import { ProductsComponent } from './products/products.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     AppComponent,
-    DashboardComponent,
-    ProductComponent
+    ProductComponent,
+    ProductsComponent,
+    ListComponent, 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -41,11 +46,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatAutocompleteModule
 
     //MatSlideToggleModule,
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

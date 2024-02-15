@@ -1,9 +1,9 @@
-<!-- <h1>Registration</h1>
+<h1>Registration</h1>
 <div class="card">
   <mat-card>
     <mat-card-content>
 
-      <form [formGroup]="DashboardForm" (ngSubmit)="formSubmit()">
+      <form [formGroup]="RegisterForm" (ngSubmit)="formSubmit()">
         <div class="input li1">
           <label>Name:</label>
 
@@ -13,7 +13,7 @@
           </mat-form-field>
 
           <div class="hasError"
-            *ngIf="DashboardForm.get('name')!.hasError('required') && (DashboardForm.get('name')!.dirty || DashboardForm.get('name')!.touched)">
+            *ngIf="RegisterForm.get('name')!.hasError('required') && (RegisterForm.get('name')!.dirty || RegisterForm.get('name')!.touched)">
 
             Name is required.
           </div><br>
@@ -37,7 +37,7 @@
             <input matInput formControlName="emailId" />
           </mat-form-field>
           <div class="hasError"
-            *ngIf="DashboardForm.get('emailId')!.hasError('required') && (DashboardForm.get('emailId')!.dirty || DashboardForm.get('emailId')!.touched)">
+            *ngIf="RegisterForm.get('emailId')!.hasError('required') && (RegisterForm.get('emailId')!.dirty || RegisterForm.get('emailId')!.touched)">
 
             E-mail id is required.
           </div><br>
@@ -51,7 +51,7 @@
             <input matInput formControlName="phoneno" />
           </mat-form-field>
           <div class="hasError"
-            *ngIf="DashboardForm.get('phoneno')!.hasError('required') && (DashboardForm.get('phoneno')!.dirty || DashboardForm.get('phoneno')!.touched)">
+            *ngIf="RegisterForm.get('phoneno')!.hasError('required') && (RegisterForm.get('phoneno')!.dirty || RegisterForm.get('phoneno')!.touched)">
 
             phone number is required.
           </div><br>
@@ -74,11 +74,11 @@
             <input matInput formControlName="address" />
           </mat-form-field>
           <div class="hasError"
-            *ngIf="DashboardForm.get('address')!.hasError('required') && (DashboardForm.get('address')!.dirty || DashboardForm.get('address')!.touched)">
+            *ngIf="RegisterForm.get('address')!.hasError('required') && (RegisterForm.get('address')!.dirty || RegisterForm.get('address')!.touched)">
 
             Address is required.
           </div><br>
-        </div>
+        <!-- </div>
         <div class="input li8">
           <label>city:</label>
           <mat-form-field appearance="outline">
@@ -100,12 +100,12 @@
                 {{ states.viewValue }}
               </mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> -->
 
           <div class="input li10">
             <label>country:</label>
           
-            <mat-form-field class="example-full-width" appearance="fill">
+            <mat-form-field class="example-full-width" appearance="outline">
 
               <mat-label>country</mat-label>
               <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
@@ -125,7 +125,7 @@
                 <input matInput formControlName="password" />
               </mat-form-field>
               <div class="hasError"
-                *ngIf="DashboardForm.get('password')!.hasError('required') && (DashboardForm.get('password')!.dirty || DashboardForm.get('password')!.touched)">
+                *ngIf="RegisterForm.get('password')!.hasError('required') && (RegisterForm.get('password')!.dirty || RegisterForm.get('password')!.touched)">
 
                 Password is required.
               </div><br>
@@ -137,7 +137,7 @@
                 <input matInput formControlName="confirmpassword" />
               </mat-form-field>
               <div class="hasError"
-                *ngIf="DashboardForm.get('confirmpassword')!.hasError('required') && (DashboardForm.get('confirmpassword')!.dirty || DashboardForm.get('confirmpassword')!.touched)">
+                *ngIf="RegisterForm.get('confirmpassword')!.hasError('required') && (RegisterForm.get('confirmpassword')!.dirty || RegisterForm.get('confirmpassword')!.touched)">
 
                 confirmpassword is required.
               </div><br>
@@ -147,16 +147,9 @@
               <button mat-raised-button type="submit" color="primary">Submit</button>
             </div>
 
-            </mat-card-content> -->
-            <!-- </mat-card> -->
-
-          <!-- </div>
+          </div>
         </div>
       </form>
     </mat-card-content>
   </mat-card>
-</div> --> 
-
-<button mat-button (click)="gotodetails()">Graph</button>
-            <button mat-button (click)="gotoregister()">Register</button>
-<router-outlet></router-outlet>
+</div>
