@@ -1,1 +1,7 @@
-<p>list works!</p>
+<h1>Child component</h1>
+<p>
+    {{name}}
+</p>
+<input placeholder="" [(ngModel)]="name">
+<button (click)="onParentNameChange()">Update to parent</button>
+<button (click)="deleteName()">Delete Name</button>

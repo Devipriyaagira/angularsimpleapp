@@ -1,1 +1,4 @@
-<p>products works!</p>
+<p>Parent component</p>
+<input #nameInputField placeholder="" [value]="nameInput">
+<button (click)="updatetochild(nameInputField.value)">Update to child</button>
+<app-list (onNameChange)="changeName($event)" (delete)="delete($event)" [name]="nameInput"></app-list>
