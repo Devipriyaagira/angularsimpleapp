@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
+import { SignalComponent } from './signal/signal.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'products-io',
     component : ProductsComponent 
+  },
+  {
+    path: 'signal',
+    component : SignalComponent
   }
 ];
 

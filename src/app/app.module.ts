@@ -21,6 +21,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products/products.component';
 import { ListComponent } from './list/list.component';
+import { SignalComponent } from './signal/signal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListComponent } from './list/list.component';
     AppComponent,
     ProductComponent,
     ProductsComponent,
-    ListComponent, 
+    ListComponent,
+    SignalComponent, 
   ],
   imports: [
     CommonModule,
